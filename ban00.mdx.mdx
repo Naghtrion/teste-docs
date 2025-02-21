@@ -1,0 +1,112 @@
+---
+title: "Ban00"
+description: "Ban00 is a Minecraft server plugin that provides player management and moderation tools for server administrators"
+---
+
+# Ban00 - Minecraft Plugin
+
+## Description
+
+Ban00 is a Minecraft server plugin that provides player management and moderation tools for server administrators. The plugin is designed to help server owners maintain control over their community by implementing a ban system.
+
+## Features
+
+* Player banning system
+
+* Configurable ban durations
+
+* Ban management commands
+
+* Player history tracking
+
+* File-based storage system for ban records
+
+## Installation
+
+1. Download the `Ban00.jar` file
+
+2. Place the JAR file in your server's `plugins` folder
+
+3. Restart your server or use `/reload` command
+
+4. The plugin will automatically generate necessary configuration files
+
+## Configuration
+
+The plugin uses a `config.yml` file for its settings. The configuration file will be generated on first run.
+
+### Default Configuration
+
+```yaml
+# Ban00 Configuration
+# Configure the plugin's behavior and messages
+
+# Basic Settings
+settings:
+  # Default ban duration (in hours)
+  default-ban-duration: 24
+```
+
+## Commands
+
+* `/ban <player> [duration] [reason]` - Ban a player
+
+* `/unban <player>` - Unban a player
+
+* `/baninfo <player>` - View ban information for a player
+
+### Command Permissions
+
+* `ban00.ban` - Permission to ban players
+
+* `ban00.unban` - Permission to unban players
+
+* `ban00.info` - Permission to view ban information
+
+## Dependencies
+
+* Requires a Bukkit/Spigot server
+
+* Minecraft version compatibility: 1.8+
+
+* Java 8 or higher
+
+## Building from Source
+
+To build the plugin from source:
+
+1. Clone the repository
+
+2. Ensure you have Maven installed
+
+3. Run `mvn clean package`
+
+4. The compiled JAR will be in the `target` directory
+
+## Support
+
+For support:
+
+* Create an issue on the plugin's repository
+
+* Contact the developer through the plugin's resource page
+
+## License
+
+This plugin is released under standard plugin license terms.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Changelog
+
+### Version 1.0.0
+
+* Initial release
+
+* Basic ban functionality
+
+* Configuration system
+
+* Player management features
